@@ -218,6 +218,61 @@
       background:#ffffffd6;
       border:1px solid #fff;
       box-shadow: 0 10px 24px rgba(0,0,0,.12);
+
+      /* ✅ Ajustes para móviles */
+@media (max-width: 480px){
+  .card{
+    width: 92vw;
+    padding: 20px 16px;
+    border-radius: 22px;
+  }
+
+  .top .ring{
+    width: 52px;
+    height: 52px;
+    font-size: 24px;
+  }
+
+  h1{
+    font-size: 1.55rem;
+    line-height: 1.15;
+  }
+
+  .subtitle{
+    font-size: .98rem;
+    margin-bottom: 12px;
+  }
+
+  .message{
+    font-size: .98rem;
+    line-height: 1.45;
+    margin-bottom: 12px;
+  }
+
+  .buttons{
+    margin-top: 14px;
+    min-height: 140px; /* más espacio para que no se amontonen */
+  }
+
+  .arena{
+    height: 140px; /* más grande en móvil */
+  }
+
+  button{
+    padding: 12px 18px;
+    font-size: .98rem;
+  }
+
+  .music{
+    right: 10px;
+    top: 10px;
+    padding: 8px 10px;
+    font-size: .9rem;
+  }
+}
+
+
+      
     }
   </style>
 </head>
@@ -485,5 +540,6 @@ musicBtn.addEventListener("click", () => {
     }
   });
 </script>
+
 
 
